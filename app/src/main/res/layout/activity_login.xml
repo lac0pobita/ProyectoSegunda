@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/backlog"
+    tools:context=".Login">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:srcCompat="@drawable/vaca"
+            android:layout_marginTop="60dp"
+            android:layout_gravity="center"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:padding="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Inicio de sesion"
+                android:layout_gravity="left"
+                android:padding="8dp"
+                android:textSize="25sp"
+                android:textColor="@color/white"/>
+
+            <EditText
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:id="@+id/login_email"
+                android:layout_marginTop="30dp"
+                android:padding="8dp"
+                android:hint="Email"/>
+
+            <EditText
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:id="@+id/login_password"
+                android:layout_marginTop="30dp"
+                android:padding="8dp"
+                android:hint="Contraseña"
+                android:inputType="textPassword"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/forgotRedirectText"
+                android:text="Olvidaste la Contraseña?"
+                android:layout_gravity="right"
+                android:padding="8dp"
+                android:textSize="18sp"
+                android:textColor="@color/white"/>
+
+
+            <Button
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:text="Iniciar Sesion"
+                android:id="@+id/login_button"
+                android:textSize="18sp"
+                android:layout_marginTop="5dp"
+                app:cornerRadius = "30dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/registerRedirectText"
+                android:text="No tienes una cuenta? Registrate"
+                android:layout_gravity="center"
+                android:padding="8dp"
+                android:textSize="18sp"
+                android:textColor="@color/white"/>
+
+
+        </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
